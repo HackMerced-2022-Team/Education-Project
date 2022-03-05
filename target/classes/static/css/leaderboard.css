@@ -1,0 +1,48 @@
+body{
+    background-color:#0A1B21;
+    color:white; 
+}
+.grey{
+    color:#555A64; 
+}
+.middleTop{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    gap:32px; 
+}
+.profile{
+    background-color: #17252A;
+    padding:20px; 
+    border-radius: 50%;
+    width:100px; 
+    float:right;
+    text-align:center;
+}
+.leaderboard{
+    background-color: #17252A;
+    text-align:center; 
+    margin:auto;
+    width:80vh;
+}
+.users-numbers{
+    display:flex;
+    flex-direction: row;
+    justify-content:center; 
+    gap:32px; 
+}
+.learn{
+     padding-top:5px; 
+     
+    /*text-decoration: underline; */
+}
+.line{
+    border:1px solid #303137;
+}
+.number{
+    background-color: #52B788;
+    border-radius:50%; 
+    width:30px; 
+}
+
