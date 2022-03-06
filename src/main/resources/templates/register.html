@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/register.css}"/>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <head>
+        <title>Register!</title>
+    </head>
+    <body>
+        <h2>App name</h2>
+        <div class = "hopefullybigbox">
+            <div class = "leaderboard">
+                <h2>Register</h2>
+                <form th:action="@{/register}" method="post">
+                    <div class = "box1">
+                        <label for="email">Email:</label> <input type="email" field="*{email}" name ="email" />
+                    </div>
+                    <div class = "box2">
+                        <label for="username">Username:</label> <input type="text" field="*{username}" name = "username"/>
+                    </div>
+                    <div class = "box3">
+                        <label for="password">Password:</label> <input type="text" field="*{password}" name = "password">
+                    </div>
+                    <div class = "box4"><input type="submit" value="Register!"/></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

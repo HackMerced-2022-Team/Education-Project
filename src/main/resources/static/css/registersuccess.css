@@ -9,29 +9,12 @@ body {
     text-align: center;
     margin: 10% auto auto;
     max-width: 30%;
-    height: 155%;
+    height: 160%;
     padding-top: 5px;
 }
 
-.hopefullybigbox {
-    height: 50vh;
-
-}
-
 .container {
-    height: 50%;
-}
-
-.box {
-    padding-bottom: 20px;
-}
-.box2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.box3 {
-    padding-top: 20px;
-}
-.box4 {
-    padding-top: 20px;
+    height: 10%;
+    text-align: center;
+    padding-top: 300px;
 }
