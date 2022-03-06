@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login</h1>
-</body>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <head>
+        <title>Log in!</title>
+    </head>
+    <body>
+        <h2>App name</h2>
+        <div class = "hopefullybigbox">
+            <div class ="container">
+                <div th:if="${param.error}">
+                    Invalid username and password.
+                </div>
+                <div th:if="${param.logout}">
+                    You have been logged out.
+                </div>
+                <div class = "leaderboard">
+                    <h2>Login</h2>
+                    <form th:action="@{/login}" method="post">
+                        <div class = "box"><label> Username : <input type="text" name="username"/> </label></div>
+                        <div class = "box2"><label> Password: <input type="password" name="password"/> </label></div>
+                        <div class = "box3"><input type="submit" value="Sign In"/></div>
+                    </form>
+                    <p class = "box4">New here? Click 
+                        <a th:href="@{/register}">here</a> to register.</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
