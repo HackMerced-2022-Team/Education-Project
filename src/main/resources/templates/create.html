@@ -12,15 +12,15 @@
 </head>
 <body>
     <div class="lesson-page">
-        <form class="lesson-creation-form" method="post">
+        <form class="lesson-creation-form" th:action="@{/create}" th:object="${lesson}" method="POST">
             <div class="lesson-section">
                 <h2 class="form-heading">Create Lesson</h2>
 
                 <div class="input-wrapper">
                     <label for="lesson-title">Title:</label>
                     <input 
-                        name="lesson-title" 
-                        id="lesson-title" 
+                        type="text"
+                        th:field="*{title}"
                         class="lesson-page-input" 
                         placeholder="Enter title"
                     />
@@ -29,8 +29,8 @@
                 <div class="input-wrapper">
                     <label for="lesson-topic">Topic:</label>
                     <input 
-                        name="lesson-topic" 
-                        id="lesson-topic" 
+                        type="text"
+                        th:field="*{topic}"
                         class="lesson-page-input"
                         placeholder="Enter topic"
                     />
@@ -39,8 +39,8 @@
                 <div class="input-wrapper">
                     <label for="lesson-completion-time">Time to Complete (minutes):</label>
                     <input 
-                        name="lesson-completion-time" 
-                        id="lesson-completion-time" 
+                        type="text"
+                        th:field="*{timeToComplete}"
                         class="lesson-page-input"
                         placeholder="Enter time to complete"
                     />
@@ -49,8 +49,8 @@
                 <div class="input-wrapper">
                     <label for="lesson-body">Lesson:</label>
                     <textarea 
-                        name="lesson-body" 
-                        id="lesson-body" 
+                        type="text"
+                        th:field="*{text}"
                         class="lesson-page-input"
                         placeholder="Insert lesson here..."
                     ></textarea>
@@ -62,12 +62,16 @@
                 <div class="quiz-question">
                     <h3>Question 1</h3>
                     <input 
-                        name="question-1" 
+                        type="text"
+                        th:field="*{question1}"
+                        name="question-1"
                         id="question-1"
                         class="lesson-page-input"
                         placeholder="Enter question here..."
                     />
                     <input 
+                        type="text"
+                        th:field="*{answer1}"
                         name="answer-1" 
                         id="answer-1"
                         class="lesson-page-input"
@@ -77,12 +81,16 @@
                 <div class="quiz-question">
                     <h3>Question 2</h3>
                     <input 
+                        type="text"
+                        th:field="*{question2}"
                         name="question-2" 
                         id="question-2"
                         class="lesson-page-input"
                         placeholder="Enter question here..."
                     />
                     <input 
+                        type="text"
+                        th:field="*{answer2}"
                         name="answer-2" 
                         id="answer-2"
                         class="lesson-page-input"
@@ -92,12 +100,16 @@
                 <div class="quiz-question">
                     <h3>Question 3</h3>
                     <input 
+                        type="text"
+                        th:field="*{question3}"
                         name="question-3" 
                         id="question-3"
                         class="lesson-page-input"
                         placeholder="Enter question here..."
                     />
                     <input 
+                        type="text"
+                        th:field="*{answer3}"
                         name="answer-3" 
                         id="answer-3"
                         class="lesson-page-input"
@@ -107,12 +119,16 @@
                 <div class="quiz-question">
                     <h3>Question 4</h3>
                     <input 
+                        type="text"
+                        th:field="*{question4}"
                         name="question-4" 
                         id="question-4"
                         class="lesson-page-input"
                         placeholder="Enter question here..."
                     />
                     <input 
+                        type="text"
+                        th:field="*{answer4}"
                         name="answer-4" 
                         id="answer-4"
                         class="lesson-page-input"
@@ -122,12 +138,16 @@
                 <div class="quiz-question">
                     <h3>Question 5</h3>
                     <input 
+                        type="text"
+                        th:field="*{question5}"
                         name="question-5" 
                         id="question-5"
                         class="lesson-page-input"
                         placeholder="Enter question here..."
                     />
                     <input 
+                        type="text"
+                        th:field="*{answer5}"
                         name="answer-5" 
                         id="answer-5"
                         class="lesson-page-input"
