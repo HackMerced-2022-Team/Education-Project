@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" th:href="@{/css/home.css}"/>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
 <body>
-    <h1>Home</h1>
-    <p th:text="'Hello, ' + ${name} + '!'" /p> 
-    <p>Hello world!</p>
+    <div class="top">
+        <h3 class="name">Apps name</h3>
+        <input type="text" class="search" placeholder="Search for a lesson!">
+        <h3 class="profile">avatar/profile</h3>
+    </div>
+    <div class="pages">
+        <h2>Lessons</h2>
+        <a href="/leaderboard">leaderboard</a> 
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Title of Lesson (#pts)</h3>
+            <div class="notBold"> 
+                <p class="topic">Topic: Computer Science </p>
+                <p>A brief description of the lesson</p>
+                <hr class="line"/>
+                <div class="easability">
+                    <p class="difficult">Difficulty</p>
+                    <p class="time">Time to complete: 20min</p>
+                </div>
+            </div>
+        </div>
+        <!--filler div space to act other spots 
+             <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> -->
+    </div>
+      
+    <!--previous line creates a search bar with search for a lesson as the placeholder-->
 </body>
 </html>

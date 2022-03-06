@@ -1,5 +1,4 @@
 // package education.backend;
-
 // import org.springframework.stereotype.Controller;
 // import org.springframework.ui.Model;
 // import org.springframework.web.bind.annotation.GetMapping;
@@ -9,12 +8,25 @@
 // @Controller
 // public class HomeController {
 
-// // route
-// @GetMapping("/")
-// public String home(@RequestParam(name = "name", required = false,
-// defaultValue = "World") String name,
-// Model model) {
-// model.addAttribute("name", name);
-// return "home";
+//     // route
+//     @GetMapping("/")
+//     public String home(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
+//             Model model) {
+//         model.addAttribute("name", name);
+//         return "home";
+//     }
 // }
-// }
+package education.backend;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+    @GetMapping("/home")
+    public String leaderboard() {
+        return "home";
+    }
+}
+
