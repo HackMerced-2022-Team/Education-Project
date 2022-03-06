@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/registersuccess.css}"/>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
       <head>
-        <title>Spring Security Example </title>
+        <title>Registration Successful!</title>
     </head>
 <body>
-    <div class="container text-center">
-        <p>You have signed up successfully! Click 
-            <a th:href="@{/login}">here</a> to log back in.</p>
+    <div class="container">
+        <h1>You have signed up successfully! Click 
+            <a th:href="@{/login}">here</a> to log back in.</h1>
     </div>
      
 </body>
