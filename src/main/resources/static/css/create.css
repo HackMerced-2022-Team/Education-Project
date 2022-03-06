@@ -1,0 +1,79 @@
+@import "./variables.css";
+
+body {
+    background-color: var(--primary-bg-col);    
+    color: var(--primary-font-col);
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.lesson-page {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson-creation-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.form-heading {
+    text-align: center;
+}
+
+.lesson-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lesson-page-input {
+    background-color: var(--secondary-bg-col);
+    color: var(--primary-font-col);
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid var(--line-col);
+    border-radius: 6px;
+}
+
+.lesson-page-input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: var(--secondary-font-col);
+}
+
+.quiz-section {
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quiz-question {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.submit-btn {
+    padding: 16px 0;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    background-color: var(--accent-col);
+    color: var(--primary-font-col);
+    border: none;
+    border-radius: 6px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Lesson</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/create.css}"/>
+</head>
+<body>
+    <div class="lesson-page">
+        <form class="lesson-creation-form" method="post">
+            <div class="lesson-section">
+                <h2 class="form-heading">Create Lesson</h2>
+
+                <div class="input-wrapper">
+                    <label for="lesson-title">Title:</label>
+                    <input 
+                        name="lesson-title" 
+                        id="lesson-title" 
+                        class="lesson-page-input" 
+                        placeholder="Enter title"
+                    />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="lesson-topic">Topic:</label>
+                    <input 
+                        name="lesson-topic" 
+                        id="lesson-topic" 
+                        class="lesson-page-input"
+                        placeholder="Enter topic"
+                    />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="lesson-completion-time">Time to Complete (minutes):</label>
+                    <input 
+                        name="lesson-completion-time" 
+                        id="lesson-completion-time" 
+                        class="lesson-page-input"
+                        placeholder="Enter time to complete"
+                    />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="lesson-body">Lesson:</label>
+                    <textarea 
+                        name="lesson-body" 
+                        id="lesson-body" 
+                        class="lesson-page-input"
+                        placeholder="Insert lesson here..."
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="quiz-section">
+                <h2 class="form-heading">Quiz Questions</h2>
+                <div class="quiz-question">
+                    <h3>Question 1</h3>
+                    <input 
+                        name="question-1" 
+                        id="question-1"
+                        class="lesson-page-input"
+                        placeholder="Enter question here..."
+                    />
+                    <input 
+                        name="answer-1" 
+                        id="answer-1"
+                        class="lesson-page-input"
+                        placeholder="Enter answer here..."
+                    />
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 2</h3>
+                    <input 
+                        name="question-2" 
+                        id="question-2"
+                        class="lesson-page-input"
+                        placeholder="Enter question here..."
+                    />
+                    <input 
+                        name="answer-2" 
+                        id="answer-2"
+                        class="lesson-page-input"
+                        placeholder="Enter answer here..."
+                    />
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 3</h3>
+                    <input 
+                        name="question-3" 
+                        id="question-3"
+                        class="lesson-page-input"
+                        placeholder="Enter question here..."
+                    />
+                    <input 
+                        name="answer-3" 
+                        id="answer-3"
+                        class="lesson-page-input"
+                        placeholder="Enter answer here..."
+                    />
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 4</h3>
+                    <input 
+                        name="question-4" 
+                        id="question-4"
+                        class="lesson-page-input"
+                        placeholder="Enter question here..."
+                    />
+                    <input 
+                        name="answer-4" 
+                        id="answer-4"
+                        class="lesson-page-input"
+                        placeholder="Enter answer here..."
+                    />
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 5</h3>
+                    <input 
+                        name="question-5" 
+                        id="question-5"
+                        class="lesson-page-input"
+                        placeholder="Enter question here..."
+                    />
+                    <input 
+                        name="answer-5" 
+                        id="answer-5"
+                        class="lesson-page-input"
+                        placeholder="Enter answer here..."
+                    />
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
