@@ -11,11 +11,11 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    // @NotEmpty(message = "User's email cannot be empty.")
+    @NotEmpty(message = "User's email cannot be empty.")
     private String email;
-    // @NotEmpty(message = "User's name cannot be empty.")
+    @NotEmpty(message = "User's name cannot be empty.")
     private String username;
-    // @NotEmpty(message = "User's password cannot be empty.")
+    @NotEmpty(message = "User's password cannot be empty.")
     private String password;
 
     public Integer getId() {
