@@ -18,29 +18,34 @@
         <h2>Lessons</h2>
         <a href="/leaderboard">leaderboard</a> 
     </div>
+    
     <div class="grid-container">
         <div class="grid-item">
-            <h3>Title of Lesson (#pts)</h3>
-            <div class="notBold"> 
-                <p class="topic">Topic: Computer Science </p>
-                <p>A brief description of the lesson</p>
-                <hr class="line"/>
-                <div class="easability">
-                    <p class="difficult">Difficulty</p>
-                    <p class="time">Time to complete: 20min</p>
+            <div th:each = "lessionInfo : ${listLessonInfo}">
+                <h3>lessionInfo.title</h3>
+                <div class="notBold"> 
+                    <p class="topic">Topic: Computer Science </p>
+                    <p>A brief description of the lesson</p>
+                    <hr class="line"/>
+                    <div class="easability">
+                        <p class="difficult">Difficulty</p>
+                        <p class="time">Time to complete: 20min</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--filler div space to act other spots 
-             <div class="grid-item">2</div>
+    </div>
+       <!--filler div space to act other spots 
+        <div class="grid-item">2</div>
         <div class="grid-item">3</div>
+         
         <div class="grid-item">4</div>
         <div class="grid-item">5</div>
         <div class="grid-item">6</div>
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
         <div class="grid-item">9</div> -->
-    </div>
+    
       
     <!--previous line creates a search bar with search for a lesson as the placeholder-->
 </body>
