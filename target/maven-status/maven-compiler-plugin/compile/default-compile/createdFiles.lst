@@ -1,2 +1,12 @@
+education/backend/LessonController.class
+education/backend/User.class
 education/backend/LeaderboardController.class
+education/backend/SQLDialect.class
+education/backend/LoginUserDetails.class
+education/backend/LoginUserDetailsService.class
+education/backend/UserRepository.class
+education/backend/CreateController.class
+education/backend/MvcConfig.class
+education/backend/RegisterController.class
+education/backend/WebSecurityConfig.class
 education/backend/BackendApplication.class
