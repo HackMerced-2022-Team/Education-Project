@@ -30,6 +30,9 @@ public class RegisterController {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
+        user.setIsContentCreator(0);
+        user.setTotalNumPoints(0);
+        user.setLevel(1);
         userRepository.save(user);
 
         return "registersuccess";

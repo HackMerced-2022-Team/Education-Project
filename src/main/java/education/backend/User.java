@@ -17,6 +17,9 @@ public class User {
     private String username;
     @NotEmpty(message = "User's password cannot be empty.")
     private String password;
+    private Integer totalNumPoints;
+    private Integer Level;
+    private Integer isContentCreator;
 
     public Integer getId() {
         return this.id;
@@ -48,6 +51,30 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getTotalNumPoints() {
+        return this.totalNumPoints;
+    }
+
+    public void setTotalNumPoints(Integer totalNumPoints) {
+        this.totalNumPoints = totalNumPoints;
+    }
+
+    public Integer getLevel() {
+        return this.Level;
+    }
+
+    public void setLevel(Integer Level) {
+        this.Level = Level;
+    }
+
+    public Integer getIsContentCreater() {
+        return this.isContentCreator;
+    }
+
+    public void setIsContentCreator(Integer isContentCreator) {
+        this.isContentCreator = isContentCreator;
     }
 
 }
